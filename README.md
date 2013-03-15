@@ -1,8 +1,8 @@
-# Session Test
+# Asset Prefix Test
 
 ### Purpose ###
 
-The purpose of this app is to look for a bug with scoped routes killing session variables.
+The purpose of this app is to look for a bug with asset prefix killing session variables.
 
 ### Install ###
 
@@ -14,9 +14,9 @@ The purpose of this app is to look for a bug with scoped routes killing session 
 
 Open http://localhost:3000 in browser and try adding session keys. They should work.
 
-To see the bug, first switch to the `scoped-routes-two-deep` branch.
+To see the bug, switch to either the `asset-prefix-one-deep` or `asset-prefix-two-deep` branch.
 
-    git checkout scoped-routes-two-deep
+    git checkout asset-prefix-two-deep
     bundle exec rails s
 
 Now try setting session variables again.
