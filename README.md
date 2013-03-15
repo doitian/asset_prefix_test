@@ -2,7 +2,7 @@
 
 ### Purpose ###
 
-The purpose of this app is to demonstrate a suspected Rails bug with scoped routes killing session variables.
+The purpose of this app is to look for a bug with scoped routes killing session variables.
 
 ### Install ###
 
@@ -19,5 +19,5 @@ To see the bug, first switch to the `scoped-routes-two-deep` branch.
     git checkout scoped-routes-two-deep
     bundle exec rails s
 
-Now try setting session variables again and see what happens.
+Now try setting session variables again.
 
