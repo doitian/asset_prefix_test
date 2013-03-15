@@ -65,11 +65,11 @@ module SessionTest
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
 
-    config.action_controller.relative_url_root = '/one'
+    config.action_controller.relative_url_root = '/one/two'
 
     # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     # This is the config that is causing the bug
     # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    config.assets.prefix = '/one'
+    config.assets.prefix = '/one/two'
   end
 end
