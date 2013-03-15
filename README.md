@@ -7,7 +7,6 @@ The purpose of this app is to look for a bug with asset prefix killing session v
 ### Install ###
 
     bundle
-    bundle exec rake db:setup
     bundle exec rails server
 
 ### Reproducing the bug ###
