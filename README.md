@@ -21,3 +21,5 @@ To see the bug in action, switch to either the `asset-prefix-one-deep` or `asset
 Now try setting session variables again. If you don't have any session variables set, you won't be able to add any.
 If on the other hand you already have one set, it can't be changed or removed.
 
+Look at [this commit](https://github.com/sporkd/asset_prefix_test/commit/054dad724e257c71bdd9100995d2d6d70bab9ebf) to see what changes were made to make it start breaking.
+
