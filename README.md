@@ -2,7 +2,7 @@
 
 ### Purpose ###
 
-The purpose of this app is to look for a bug with asset prefix killing session variables.
+The purpose of this app is to demonstrate a bug with Rails config.assets.prefix causing the session to become un-responsive.
 
 ### Install ###
 
@@ -13,10 +13,11 @@ The purpose of this app is to look for a bug with asset prefix killing session v
 
 Open http://localhost:3000 in browser and try adding session keys. They should work.
 
-To see the bug, switch to either the `asset-prefix-one-deep` or `asset-prefix-two-deep` branch.
+To see the bug in action, switch to either the `asset-prefix-one-deep` or `asset-prefix-two-deep` branch.
 
     git checkout asset-prefix-two-deep
     bundle exec rails s
 
-Now try setting session variables again.
+Now try setting session variables again. If you don't have any session variables set, you won't be able to add any.
+If on the other hand you already have one set, it can't be changed or removed.
 
